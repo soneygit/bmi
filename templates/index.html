@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculater</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+
+</head>
+<h1>BMI Calculater</h1>
+<body>
+
+    <div>
+        <form class ="pure-form" action="/" method="POST">
+            Enter your weight in KG: <br>
+            <input type="number" name="userweight" id=""> <br>
+            Enter your height in CM : <br>
+            <input type="number" name="userheight" id=""> <br>
+            <button class="pure-button pure-button-primary" type="submit" value="submit">Submit</button>
+        </form> 
+    </div>
+
+    <div>
+        {% if bmi %}
+        <p>Your weight is {{ weight }}</p>
+        <p>Your height is {{ height }}</p>
+        <p>Your BMI is {{ bmi }}</p>
+
+        {% endif %}
+
+    </div>
+</body>
+</html>
