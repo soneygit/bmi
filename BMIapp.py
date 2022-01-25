@@ -15,7 +15,7 @@ def index():
         bmi = round(weight / ((height/100)**2),2)
 
     return  render_template('index.html', weight = weight, height = height, bmi = bmi)
-
-app.run()
+if __name__ == '__main__':
+    app.run()
 
 
